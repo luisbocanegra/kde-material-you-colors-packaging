@@ -43,6 +43,7 @@ BuildRequires:  plasma5support-devel
 BuildRequires:  python3-devel
 Requires:       python3-dbus
 Requires:       python3-pillow
+Requires:       python-pywal
 %else
 BuildRequires:  kf6-extra-cmake-modules
 BuildRequires:  libplasma6-devel
@@ -52,6 +53,7 @@ BuildRequires:  plasma5support6-devel
 Requires:       python3-dbus-python
 Requires:       libPlasma5Support6
 Requires:       python311-Pillow
+Requires:       %{python_module pywal >= 3.3.0}
 %endif
 BuildRequires:  python-rpm-macros
 BuildRequires:  fdupes
@@ -61,7 +63,6 @@ BuildRequires:  %{python_module setuptools >= 61.0}
 BuildRequires:  %{python_module wheel >= 0.37.1}
 BuildRequires:  %{python_module numpy >= 1.20}
 Requires:       python-materialyoucolor >= 2.0.9
-Requires:       %{python_module pywal >= 3.3.0}
 BuildArch:      x86_64
 
 %description

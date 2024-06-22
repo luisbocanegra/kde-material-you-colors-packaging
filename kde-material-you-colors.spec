@@ -27,7 +27,7 @@
 %{?!python_module:%define python_module() python-%{**} python3-%{**}}
 %global debug_package %{nil}
 Name:           kde-material-you-colors
-Version:        1.9.2
+Version:        1.9.3
 Release:        1%{?dist}
 Summary:        Automatic Material You Colors Generator from your wallpaper for the Plasma Desktop
 License:        GNU General Public License v3 (GPLv3) (FIXME:No SPDX)

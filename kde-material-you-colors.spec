@@ -28,7 +28,7 @@
 %global debug_package %{nil}
 Name:           kde-material-you-colors
 Version:        1.9.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Automatic Material You Colors Generator from your wallpaper for the Plasma Desktop
 License:        GNU General Public License v3 (GPLv3) (FIXME:No SPDX)
 URL:            https://github.com/luisbocanegra/%{name}
@@ -100,5 +100,7 @@ sed -i "1{/^#!\/usr\/bin\/env python3/d}" %{buildroot}%{python3_sitelib}/kde_mat
 /usr/share/plasma/plasmoids/*
 
 %changelog
+* Fri Nov  8 2024 Luis Bocanegra <luisbocanegra@users.noreply.github.com> 1.9.3-2
+- Rebuilt for Python 3.13
 * Sun May 20 2024 Luis Bocanegra <luisbocanegra@users.noreply.github.com> 1.9.0-1
 - new package built with tito
